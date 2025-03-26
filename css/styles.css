@@ -1,0 +1,201 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3eafc;
+}
+
+/* Encabezado */
+header {
+    background: #fff;
+    padding: 10px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.top-bar img {
+    height: 50px; /* Tamaño del logo corregido */
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #5c3dad;
+}
+
+/* Sección hero */
+.hero {
+    background: url('banner.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2em;
+}
+
+.hero span {
+    color: #ffcc00;
+}
+
+/* Secciones */
+.categories {
+    padding: 20px;
+    text-align: left; /* Títulos alineados a la izquierda */
+}
+
+.section-title {
+    font-size: 1.8em;
+    margin-left: 5%;
+}
+
+/* Contenedores de categorías */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 15px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.category {
+    position: relative;
+    width: 100%;
+    height: 250px; /* Tamaño cuadrado más grande */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.category img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* La imagen ocupa todo el espacio */
+    border-radius: 10px;
+}
+
+/* Texto centrado sobre la imagen */
+.category p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+/* Ubicación de las tiendas */
+.store-map {
+    text-align: left;
+    padding: 20px;
+    margin-left: 5%;
+}
+
+.store-map img {
+    width: 100%;
+    max-width: 1200px;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Sección de Locomoción */
+.transport {
+    background: #4b2390;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.transport-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.transport-item {
+    background: #ff6200;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.bus {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Sección de Información */
+.info-section {
+    background: #4b2390;
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.info-box {
+    flex: 1;
+    margin: 10px;
+}
+
+.info-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.info-box img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+.info-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-box ul li {
+    margin: 5px 0;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 10px;
+}
+
+/* Pie de página */
+footer {
+    background: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
